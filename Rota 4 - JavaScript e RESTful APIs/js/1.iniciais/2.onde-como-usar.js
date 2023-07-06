@@ -1,0 +1,7 @@
+/* O JavaScript foi por muito tempo conhecido apenas como linguagem client-side. Porém, ela foi se tornando cada vez mais popular ao longo dos anos também como uma linguagem server-side, ou seja, uma linguagem que também roda do lado do servidor.
+
+Isso se deu por conta da criação e popularização de ferramentas como o Node.js, que providencia um ambiente no servidor capaz de interpretar JavaScript. Além disso, podemos encontrar e utilizar o JavaScript em diversas ferramentas, como por exemplo, na base de dados MongoDB, que aceita consultas escritas em JS/SQL - uma combinação de SQL com JavaScript, e no Unity, que tem suporte a uma versão modificada de JavaScript.
+
+Quando falamos em desenvolvimento do lado do cliente, client-side, temos diversos frameworks desenvolvidos especificamente para facilitar a manipulação dos elementos da página web para que possamos criar experiências cada vez mais ricas para os usuários. Um framework é um conjunto de conceitos e funcionalidades comuns entre vários projetos condensados para auxiliar no desenvolvimento do seu software. Podemos citar três populares Frameworks, o AngularJS, o React e o JQuery.
+
+Nosso foco será aprender o JavaScript para ser utilizado no lado do servidor, server-side, então não iremos falar sobre frameworks client-side nem sobre a manipulação de elementos da página web neste material. Neste caso, caso queira estudar um pouco sobre estes assuntos, recomendamos acessar, por exemplo, Front-end JavaScript frameworks e o blog Tableless. */
