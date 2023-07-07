@@ -22,8 +22,8 @@
 // WHILE
 // O laço while irá repetir um bloco de código enquanto sua condição seja verdadeira. Quando a condição relacionada ao laço for avaliada em falsa, a repetição se encerra.
 
-while (condicao) {
-    // código a ser executado
+while (/condicao/) {
+    // bloco de código
 }
 
 // Nesse exemplo, vamos listar os números de 1 até 30 utilizando o while:
@@ -51,15 +51,15 @@ while (num <= 30) { // enquanto num for menor ou igual a 30
 // DO WHILE
 // A diferença do do while para o while está na avaliação da condição de parada. Enquanto, no while a condição é testada antes do bloco de código ser executado, no do while a condição de parada é testada após o bloco de código ser executado.
 
-do {
-    // código a ser executado
-} while (condicao);
+do { // faça
+    // bloco de código
+} while (/condicao/);
 
 // Vamos novamente listar os números de 1 até 30, porém agora usando o do while.
 
 var num = 1;
 
-do { // faça
+do {
     console.log(num); // imprime o valor de num
     num++; // incrementa a variável num
 } while (num <= 30); // enquanto num for menor ou igual a 30
