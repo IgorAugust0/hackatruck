@@ -37,4 +37,5 @@ A seguir indicamos alguns links que podem complementar e enriquecer seu autoestu
 - [Celebrate](https://github.com/arb/celebrate)
 
 ---
+
 [< Retornar à página principal](../../../README.md)
