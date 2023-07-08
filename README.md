@@ -40,6 +40,8 @@ Apresenta conceitos e fundamentos de Algoritmos, Lógica de Programação e Orie
 - Tipos de Retorno
 - Recursão
 
+---
+
 ### Orientação a Objetos
 
 #### Conceitos Iniciais
@@ -64,6 +66,8 @@ Apresenta conceitos e fundamentos de Algoritmos, Lógica de Programação e Orie
 #### Herança
 
 #### Polimorfismo
+
+---
 
 ### Introdução a Swift
 
@@ -95,6 +99,8 @@ Apresenta conceitos e fundamentos de Algoritmos, Lógica de Programação e Orie
 - Protocolos
 - Extensões
 
+---
+
 ### JavaScript e RESTful APIs
 
 #### Fundamentos de JavaScript
@@ -117,6 +123,8 @@ Apresenta conceitos e fundamentos de Algoritmos, Lógica de Programação e Orie
 
 - Node-RED.
 - Node.js App.
+
+---
 
 **<contato@hackatruck.com.br>**
 
