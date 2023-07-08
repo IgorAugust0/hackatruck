@@ -19,7 +19,7 @@
 
 // Vamos criar uma rota que quando acessada, imprime no console um texto qualquer.
 
-app.get("/teste", function (request, response) {
+app.get("/teste", (req, res) => {
   console.log("Rota /teste acessada!");
 });
 
@@ -47,8 +47,8 @@ const express = require("express");
 // 2. Criando uma instância do express
 const app = express();
 // 3. Definindo uma rota
-app.get("/teste", function (request, response) {
-    console.log("Rota /teste acessada!");
+app.get("/teste", (req, res) => {
+  console.log("Rota /teste acessada!");
 });
 // 4. Definindo a porta em que a aplicação irá 'escutar'
 app.listen(8080);

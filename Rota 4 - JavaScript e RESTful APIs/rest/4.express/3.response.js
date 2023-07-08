@@ -34,19 +34,19 @@
 // A documentação do método pode ser acessada por esse link:http://expressjs.com/pt-br/4x/api.html#res.send
 
 // Exemplo de uso do método .send():
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   res.send("<h1>Olá, Express!</h1>");
   res.end();
 });
 
 // Enviar um array ou Objeto faz com que o método .send() automaticamente defina o Content-Type da resposta como application/json, isto é, ele envia a resposta como JSON.
-response.send({ nome: "Express" });
-response.send(["Express", "Node.js"]);
+res.send({ nome: "Express" });
+res.send(["Express", "Node.js"]);
 
 // Caso você queira retornar um arquivo como resposta da requisição, por exemplo, uma página web, basta utilizar o método .sendFile() passando como parâmetro o caminho do arquivo a ser enviado.
 
 // Retornando um arquivo HTML como resposta:
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   // Nome do arquivo a ser enviado
   const fileName = "/index.html";
 
@@ -61,7 +61,7 @@ app.get("/", function (req, res) {
   };
 
   // Enviando o arquivo como resposta
-  res.sendFile(fileName, options, function (err) {
+  res.sendFile(fileName, options, (err) => {
     if (err) {
       // Caso ocorra algum erro, envia uma resposta de erro do tipo 500
       res.status(err.status).end();
@@ -85,7 +85,7 @@ app.get("/", function (req, res) {
 // Por último, temos um exemplo do método .json(). Ele recebe um valor e o envia como JSON válido. A documentação do método pode ser encontrada aqui.
 
 // Exemplo de uso do método .json():
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   res.status(200).json({ nome: "Express" });
   res.end();
 });

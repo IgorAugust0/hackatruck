@@ -1,7 +1,7 @@
 // EXPRESS - RESTful APIs
 // REQUEST
 
-// O parâmetro request é um objeto que possui uma série de informações a respeito da requisição HTTP em si. Entre as várias propriedades da requisição, as que mais iremos utilizar são:
+// O parâmetro req é um objeto que possui uma série de informações a respeito da requisição HTTP em si. Entre as várias propriedades da requisição, as que mais iremos utilizar são:
 
 // .body: O corpo da requisição. Por exemplo, quando usamos POST.
 
@@ -11,41 +11,41 @@
 
 // .method: O método HTTP da requisição, como GET, POST, DELETE, etc.
 
-// Você pode encontrar detalhes sobre as propriedades e métodos do objeto request na documentação oficial.
+// Você pode encontrar detalhes sobre as propriedades e métodos do objeto req na documentação oficial.
 
 // Agora, vamos ver exemplos de como usar os atributos .body, .params e .query.
 
 // O atributo .params armazena as propriedades nomeadas na rota precedidas por : (dois pontos).
 
 // Exemplo de rota com parâmetro nomeado:
-app.get("/pokemons/:id", function (request, response) {
-  const id = request.params.id;
+app.get("/pokemons/:id", (req, res) => {
+  const id = req.params.id;
   console.log(id);
-  response.send("Pokemon com id: " + id);
+  res.send("Pokemon com id: " + id);
 });
 
-app.get("/pokemons/:id/:nome", function (request, response) {
-  const id = request.params.id;
-  const nome = request.params.nome;
+app.get("/pokemons/:id/:nome", (req, res) => {
+  const id = req.params.id;
+  const nome = req.params.nome;
   console.log(id);
   console.log(nome);
-  response.send("Pokemon com id: " + id + " e nome: " + nome);
+  res.send("Pokemon com id: " + id + " e nome: " + nome);
 });
 
 // O atributo .query tem como propriedade todas as informações que vem após o caractere ? na rota. Para saber as regras de formatação de uma query visite o artigo da Wikipédia (https://en.wikipedia.org/wiki/Query_string), ele é bem atualizado e confiável. A função de uma query é definir parâmetros de busca.
 
 // Exemplo de rota com query:
 // GET /pokemons?nome=pikachu&tipo=elétrico
-app.get("/pokemons", function (request, response) {
-  const nome = request.query.nome;
-  const tipo = request.query.tipo;
+app.get("/pokemons", (req, res) => {
+  const nome = req.query.nome;
+  const tipo = req.query.tipo;
   console.log(nome);
   console.log(tipo);
-  response.send("Pokemon com nome: " + nome + " e tipo: " + tipo);
+  res.send("Pokemon com nome: " + nome + " e tipo: " + tipo);
 });
 
 // GET /user?order=desc&info[age]=20&info[gender]=masculino
-request.query ===
+req.query ===
   {
     order: "desc",
     info: {
@@ -68,10 +68,10 @@ app.use(bodyParser.json());
 
 // Exemplo de rota com .body:
 // POST /pokemons { "nome": "pikachu", "tipo": "elétrico" }
-app.post("/pokemons", function (request, response) {
-  const body = request.body;
+app.post("/pokemons", (req, res) => {
+  const body = req.body;
   console.log(body); // { "nome": "pikachu", "tipo": "elétrico" }
-  response.send("Pokemon criado com sucesso!");
+  res.send("Pokemon criado com sucesso!");
 });
 
 // É possível fazer muito mais com o express. Ele é um framework poderoso que agrega várias funcionalidades essenciais para a criação de serviços e aplicações web. O conteúdo que vimos neste tópico aborda apenas o básico necessário para começar a se aventurar.
