@@ -1,0 +1,1 @@
+There is no code to provide for an image file. The contents of an image file are binary data, not code. To view the image, the user can open the file in an image viewer or embed it in an HTML file using an `<img>` tag with the `src` attribute set to the path of the image file.
